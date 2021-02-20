@@ -1,0 +1,26 @@
+#
+#   Main
+#-----------------------#
+main:
+  css:
+    theme:
+      assets/css/mollo-location.css: {}
+  js:
+    assets/js/mollo_location.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+#
+#   Block
+#-----------------------#
+block:
+  css:
+    theme:
+      assets/css/mollo-location-block.css: { }
+#
+#   Form
+#-----------------------#
+form:
+  css:
+    theme:
+      assets/css/mollo-form.css: { }

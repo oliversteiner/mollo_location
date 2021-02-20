@@ -1,0 +1,23 @@
+#
+#  Page
+#-----------------------#
+page:
+  path: '/mollo-location'
+  defaults:
+    _controller: '\Drupal\mollo_location\Controller\MolloLocationController::page'
+    _title: 'Mollo Location Template'
+  requirements:
+    _permission: 'access content'
+
+#
+#  Settings Form
+#-----------------------#
+settings:
+  path: 'admin/config/system/configuration/mollo-location'
+  defaults:
+    _form: '\Drupal\mollo_location\Form\MolloLocationSettingsForm'
+    _title: 'Mollo Location Settings Form'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

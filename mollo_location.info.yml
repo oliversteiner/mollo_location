@@ -1,0 +1,12 @@
+name: 'Location'
+type: module
+description: 'Drupal Module Location for Mollo'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Mollo'
+dependencies:
+  - drupal:node
+  - mollo_utils
+  - twig_tweak
+  - mollo_address
+  - inline_entity_form

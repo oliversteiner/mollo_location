@@ -1,0 +1,28 @@
+{
+  "name": "drupal/mollo_location",
+  "type": "drupal-module",
+  "description": "A Ready to use Drupal 9 Module Starter / Boilerplate",
+  "license": "GPL-3.0+",
+  "version": "0.1.0-dev",
+  "keywords": [
+    "drupal",
+    "mollo",
+    "module",
+    "location"
+  ],
+  "homepage": "https://github.com/oliversteiner/mollo_location",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/oliversteiner/mollo_location/issues",
+    "source": "https://github.com/oliversteiner/mollo_location"
+  },
+  "authors": [
+    {
+      "name": "Oliver Steiner",
+      "email": "oliver@mollo.ch",
+      "homepage": "https://mollo.ch",
+      "role": "Developer"
+    }
+  ],
+  "require": {}
+}
