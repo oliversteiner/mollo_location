@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_mollo_name]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.mollo_location

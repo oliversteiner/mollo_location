@@ -1,0 +1,194 @@
+uuid: 04381e28-8138-4ecb-a4c4-4bbce57439b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mollo_location.body
+    - field.field.node.mollo_location.field_mollo_addresses
+    - field.field.node.mollo_location.field_mollo_description
+    - field.field.node.mollo_location.field_mollo_email
+    - field.field.node.mollo_location.field_mollo_facebook
+    - field.field.node.mollo_location.field_mollo_links
+    - field.field.node.mollo_location.field_mollo_media
+    - field.field.node.mollo_location.field_mollo_mobile
+    - field.field.node.mollo_location.field_mollo_name
+    - field.field.node.mollo_location.field_mollo_notes
+    - field.field.node.mollo_location.field_mollo_phone
+    - field.field.node.mollo_location.field_mollo_title_image
+    - image.style.large
+    - node.type.mollo_location
+  module:
+    - field_group
+    - light_slide_gallery
+    - link
+    - media
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_address:
+      children: {  }
+      parent_name: ''
+      weight: 9
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: Address
+    group_contact:
+      children:
+        - field_mollo_email
+        - field_mollo_links
+        - field_mollo_phone
+        - field_mollo_mobile
+        - field_mollo_facebook
+      parent_name: ''
+      weight: 5
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: Contact
+    group_map:
+      children: {  }
+      parent_name: ''
+      weight: 8
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: Map
+    group_images:
+      children:
+        - field_mollo_media
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: Images
+_core:
+  default_config_hash: 6jpd8zRzbIK2vHQCYOaFqN-iSeTVwVY2TXTU-UwbC04
+id: node.mollo_location.default
+targetEntityType: node
+bundle: mollo_location
+mode: default
+content:
+  field_mollo_addresses:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mollo_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mollo_email:
+    weight: 15
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_mollo_facebook:
+    weight: 19
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mollo_links:
+    weight: 16
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mollo_media:
+    weight: 7
+    label: hidden
+    settings:
+      image_style_default: medium
+      image_style_thumbnail: unig_thumbnail
+      image_style_fullscreen: unig_hd
+      gallery_style: grid
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    type: light_slide_gallery_media_formatter
+    region: content
+  field_mollo_mobile:
+    weight: 18
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mollo_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mollo_phone:
+    weight: 17
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mollo_title_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_mollo_notes: true
+  langcode: true

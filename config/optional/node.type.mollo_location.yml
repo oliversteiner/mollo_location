@@ -1,0 +1,19 @@
+uuid: dd8ba579-66cc-437d-ac8e-7390b5ec803d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: HARyXCe3CFCdhh8prrMy9HBSzsEWZmmAqh-g3CF19Yk
+name: Location
+type: mollo_location
+description: Mollo
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

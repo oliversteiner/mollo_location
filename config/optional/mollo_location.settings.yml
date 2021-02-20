@@ -1,0 +1,12 @@
+section_checkbox:
+  foo: 1
+  bar: 1
+section_text:
+  title: Title
+  description: Descripton
+section_radio:
+  active: '0'
+section_file:
+  image_path: ''
+_core:
+  default_config_hash: tc7m8VeHCJrTcEAZJDyFeUmxgklcyUjZ6Y7wtLK9m78
