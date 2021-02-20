@@ -4,9 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_mollo_media
-    - media.type.mollo_image
-    - media.type.mollo_video
-    - media.type.mollo_video_remote
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.mollo_location
 _core:
   default_config_hash: 0HinNm4s6PIkursbg_eMleJ-YoIMNzP1yhfIhIMpWmg
@@ -24,11 +25,13 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      mollo_image: mollo_image
-      mollo_video: mollo_video
-      mollo_video_remote: mollo_video_remote
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
     sort:
       field: _none
+      direction: ASC
     auto_create: true
-    auto_create_bundle: mollo_image
+    auto_create_bundle: image
 field_type: entity_reference
